@@ -1,0 +1,101 @@
+body {
+  padding: 40px;
+}
+
+// picture card styles
+
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+img {  
+  display: block;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.gallery-card{
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .stats-item {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+
+    &:hover {
+      color: grey;
+    }
+  }
+}
+
+.material-icons {
+  margin-right: 10px;
+}
+
+button {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  background-color: #8fcedd;
+  
+  &:hover {
+    background-color:gray;
+  }
+
+  &:active {
+    position:relative;
+    top:1px;
+  }
+}
+
+// form styles
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-form {
+  margin-right: 40px;
+}
+
+.view-more-button {
+  visibility:hidden;
+  display: block;
+  margin: auto;
+}
+
+.input__search-form{
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+
+  border: unset;
+  border-radius: 4px;
+  outline-color: #8fcedd;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(60, 66, 87, 0.16) 0px 0px 0px 1px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
