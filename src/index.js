@@ -1,5 +1,5 @@
 import './sass/main.scss';
-// import {fetchPictures} from './fetchPictures';
+
 import formtEl from './tamplates/inputEl.hbs';
 import picturecard from './tamplates/picturecard.hbs';
 import InfiniteScroll from 'infinite-scroll';
@@ -43,7 +43,6 @@ buttonEl.addEventListener('click', () => {
     });
   }
 });
-
 
 infScroll.on('load', function(response) {
   if (response.total === 0 || response.total<=12){
